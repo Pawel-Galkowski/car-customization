@@ -1,0 +1,62 @@
+// IMPORTS
+
+@import "./variables.scss";
+
+// CONFIGURATION MENU ANIMATIONS
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// CONFIGURATION MENU STYLES
+.configurationMenu {
+  .configMenu {
+    text-align: center;
+    button {
+      border: 1px solid #000000;
+      border-bottom: 2px solid #000000;
+      border-radius: 30px;
+      background-color: #fff;
+      padding: 15px;
+      margin: 10px;
+      font-size: 1.1rem;
+      transition: 0.2s ease;
+      animation: appear 0.3s ease-in;
+      &:hover {
+        background-color: $baseColor;
+        transform: scale(1.1) translateY(-4px);
+        color: white;
+      }
+      &:focus {
+        outline: none;
+        background-color: $baseColor;
+      }
+    }
+    h2 {
+      color: $textColor;
+      animation: appear 0.2s ease-in;
+    }
+  }
+
+  .configMenu-boxTitle {
+    margin: 5px auto 5px auto;
+    animation: appear 0.2s ease-in;
+    color: $textColor;
+  }
+
+  @media (max-width: 420px) {
+    .configMenu {
+      button {
+        font-size: 0.9rem;
+        padding: 15px;
+        margin: 10px;
+      }
+    }
+  }
+}

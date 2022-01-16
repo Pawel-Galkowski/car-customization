@@ -1,0 +1,77 @@
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.configurationMenu .configMenu {
+  text-align: center;
+}
+
+.configurationMenu .configMenu button {
+  border: 1px solid #000000;
+  border-bottom: 2px solid #000000;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px;
+  font-size: 1.1rem;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  -webkit-animation: appear 0.3s ease-in;
+          animation: appear 0.3s ease-in;
+}
+
+.configurationMenu .configMenu button:hover {
+  background-color: #D0D0D0;
+  -webkit-transform: scale(1.1) translateY(-4px);
+          transform: scale(1.1) translateY(-4px);
+  color: white;
+}
+
+.configurationMenu .configMenu button:focus {
+  outline: none;
+  background-color: #D0D0D0;
+}
+
+.configurationMenu .configMenu h2 {
+  color: #848484;
+  -webkit-animation: appear 0.2s ease-in;
+          animation: appear 0.2s ease-in;
+}
+
+.configurationMenu .configMenu-boxTitle {
+  margin: 5px auto 5px auto;
+  -webkit-animation: appear 0.2s ease-in;
+          animation: appear 0.2s ease-in;
+  color: #848484;
+}
+
+@media (max-width: 420px) {
+  .configurationMenu .configMenu button {
+    font-size: 0.9rem;
+    padding: 15px;
+    margin: 10px;
+  }
+}
+/*# sourceMappingURL=configurationMenu.css.map */

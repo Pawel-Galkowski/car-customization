@@ -1,0 +1,52 @@
+// IMPORTS
+
+@import "./variables.scss";
+
+// PREVIEW WINDOW ANIMATIONS
+
+@keyframes displayIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// PREVIEW WINDOW STYLES
+.previewWindow {
+  .previewWindow-carData {
+    list-style: none;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    li {
+      margin: 10px;
+      font-size: 0.9rem;
+      font-weight: 100;
+      animation: displayIn 0.2s ease-in;
+      &:last-child {
+        font-style: italic;
+      }
+      h3 {
+        display: inline;
+        color: $textColor;
+      }
+    }
+  }
+
+  .previewWindow-car {
+    margin: auto;
+    text-align: center;
+  }
+
+  .previewWindow-carIcon {
+    background-color: $baseColor;
+    text-align: center;
+    transition: 0.3s ease-in;
+    padding: 15px;
+    border: 2px solid $baseColor;
+    border-radius: 30px;
+    animation: displayIn 0.3s ease-in;
+  }
+}

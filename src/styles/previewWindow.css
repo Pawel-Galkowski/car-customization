@@ -1,0 +1,59 @@
+@-webkit-keyframes displayIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes displayIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.previewWindow .previewWindow-carData {
+  list-style: none;
+  margin: auto;
+  text-align: center;
+  padding: 0;
+}
+
+.previewWindow .previewWindow-carData li {
+  margin: 10px;
+  font-size: 0.9rem;
+  font-weight: 100;
+  -webkit-animation: displayIn 0.2s ease-in;
+          animation: displayIn 0.2s ease-in;
+}
+
+.previewWindow .previewWindow-carData li:last-child {
+  font-style: italic;
+}
+
+.previewWindow .previewWindow-carData li h3 {
+  display: inline;
+  color: #848484;
+}
+
+.previewWindow .previewWindow-car {
+  margin: auto;
+  text-align: center;
+}
+
+.previewWindow .previewWindow-carIcon {
+  background-color: #D0D0D0;
+  text-align: center;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  padding: 15px;
+  border: 2px solid #D0D0D0;
+  border-radius: 30px;
+  -webkit-animation: displayIn 0.3s ease-in;
+          animation: displayIn 0.3s ease-in;
+}
+/*# sourceMappingURL=previewWindow.css.map */
