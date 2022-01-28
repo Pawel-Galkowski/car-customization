@@ -1,10 +1,31 @@
 # Car Customization
 
-This application was made in React with Redux. <br />
-Car customization let's you select and costumize your car configuration. Every car model have other type of engine, and every engine have various gearBox type.
+Car customization let's you select and costumize your car configuration. <br/>
+Every car model have other type of engine, and every engine have versions of gearBox type.
 
----
+
+## Technology stack
+    - JavaScript
+    - React
+    - Redux
+    - HTML5
+    - SASS
+
+
 ## Instalation
-To run this app download your copy in zip, then un-zip it. In core folder run: <br/>
+
+To install application you need to have a NPM(Node Package Manager). You can read about it on main NPM website.<br/>
+After all you need to type in manager
+
 `npm install` or `yarn add`.<br/>
-After downloading all packages run `npm start` or `yarn start` to run the developing server.
+
+
+## Usage
+To use application you need to type
+
+```GIT
+`npm start` or `yarn start`
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
