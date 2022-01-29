@@ -18,10 +18,14 @@ module.exports = {
     'react',
   ],
   rules: {
-    'react/forbid-prop-types': 'off',
     'linebreak-style': 'off',
     'default-param-last': 'off',
     'react/no-array-index-key': 'off',
     'react/jsx-filename-extension': 'off',
+  },
+  settings: {
+    react: {
+      version: 'latest',
+    },
   },
 };
